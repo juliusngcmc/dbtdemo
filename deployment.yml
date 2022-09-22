@@ -4,13 +4,13 @@ jobs:
    schedule: 0 12 * * * 
    steps:
      - name: run models 
-       command: dbt run 
+       command: dbt_gnm run
      - name: test models
-       command: dbt test 
+       command: dbt_gnm test
 
  - name: nightly
    schedule: 0 0 * * * 
    steps:
      - name: run models
-       command: dbt run 
+       command: dbt_gnm run
 
